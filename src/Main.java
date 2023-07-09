@@ -10,7 +10,6 @@ public class Main {
 	        System.out.println("2. Agregar stock");
 	        System.out.println("3. Stock vendido");
 
-	        int opcion = scanner.nextInt();
-	      
+	        int opcion = scanner.nextInt(); 
 	}
 }

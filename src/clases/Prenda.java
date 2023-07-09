@@ -12,7 +12,6 @@ public abstract class Prenda {
 		
 	}
 	
-	
 	public String getNombre() {
 		return nombre;
 	}
