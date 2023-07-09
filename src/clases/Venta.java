@@ -8,6 +8,5 @@ public class Venta {
 	public Venta() {
 		prendasVendidas = new ArrayList<>();
 		total = 0.0;
-		
 	}
 }

@@ -7,6 +7,7 @@ public class Stock {
 	public Stock() {
 		prendas = new ArrayList<>();
 	}
+	
 	//para agregar prendas
 	public void agregarPrenda(Prenda prenda) {
 		prendas.add(prenda);

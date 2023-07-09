@@ -11,7 +11,6 @@ public abstract class Prenda {
 		this.precio = precio;
 		
 	}
-	
 	public String getNombre() {
 		return nombre;
 	}

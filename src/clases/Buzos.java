@@ -25,7 +25,7 @@ public class Buzos extends Prenda{
 	public void setColor(String color) {
 		this.color = color;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Buzos [talle=" + talle + ", color=" + color + ", getTalle()=" + getTalle() + ", getColor()="
