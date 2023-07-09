@@ -7,8 +7,7 @@ public class Remeras extends Prenda{
 	public Remeras(int id, String nombre, double precio, String talle, String color) {
 		super(id, nombre, precio);
 		this.talle = talle;
-		this.color = color;
-		
+		this.color = color;	
 	}
 		
 	public String getTalle() {

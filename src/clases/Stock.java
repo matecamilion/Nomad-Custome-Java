@@ -19,7 +19,6 @@ public class Stock {
 		prendas.removeIf(prenda -> prenda.getId() == id);
 		System.out.println("Prenda eliminada correctamente!");
 	}
-	
 	public Prenda buscarPrenda(int id) {
 		for(Prenda prenda : prendas) {
 			if(prenda.getId() == id) {

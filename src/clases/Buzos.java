@@ -10,7 +10,6 @@ public class Buzos extends Prenda{
 		this.color = color;
 		
 	}
-
 	public String getTalle() {
 		return talle;
 	}

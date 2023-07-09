@@ -38,5 +38,4 @@ public class Pantalones extends Prenda{
 	protected int getId() {
 		return 0;
 	}
-	
 }
