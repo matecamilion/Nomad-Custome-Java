@@ -14,6 +14,7 @@ public class Pantalones extends Prenda{
 		return talle;
 	}
 	
+	
 	public void setTalle(String talle) {
 		this.talle = talle;
 	}
