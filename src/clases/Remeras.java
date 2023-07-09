@@ -36,7 +36,7 @@ public class Remeras extends Prenda{
 				+ getColor() + ", getId()=" + getId() + ", getNombre()=" + getNombre() + ", getPrecio()=" + getPrecio()
 				+ ", toString()=" + super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
 				+ "]";
-	}
+}
 
 	@Override
 	protected int getId() {

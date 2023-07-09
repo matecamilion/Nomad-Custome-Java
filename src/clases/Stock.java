@@ -24,7 +24,7 @@ public class Stock {
 		for(Prenda prenda : prendas) {
 			if(prenda.getId() == id) {
 				return prenda;
-			}
+		}
 		}
 		return null;
 	}

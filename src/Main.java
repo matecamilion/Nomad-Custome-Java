@@ -13,7 +13,5 @@ public class Main {
 	        int opcion = scanner.nextInt();
 
 	      
-	
-
 	}
 }
