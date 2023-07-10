@@ -1,39 +1,39 @@
 package clases;
 
 public class Buzos extends Prenda{
-	private String talle;
-	private String color;
-	
-	public Buzos(int id, String nombre, double precio, String talle, String color) {
-		super(id, nombre, precio);
-		this.talle = talle;
-		this.color = color;		
-	}
-	public String getTalle() {
-		return talle;
-	}
+    private String talle;
+    private String color;
 
-	public void setTalle(String talle) {
-		this.talle = talle;
-	}
+    public Buzos(int id, double precio, String talle, String color) {
+        super(id, precio);
+        this.talle = talle;
+        this.color = color;
+    }
+    public String getTalle() {
+        return talle;
+    }
 
-	public String getColor() {
-		return color;
-	}
+    public void setTalle(String talle) {
+        this.talle = talle;
+    }
 
-	public void setColor(String color) {
-		this.color = color;
-	}
-	
-	@Override
-	public String toString() {
-		return "Buzos [talle=" + talle + ", color=" + color + ", getTalle()=" + getTalle() + ", getColor()="
-				+ getColor() + ", getId()=" + getId() + ", getNombre()=" + getNombre() + ", getPrecio()=" + getPrecio()
-				+ ", toString()=" + super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
-				+ "]";
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Buzos [talle=" + talle + ", color=" + color + ", getTalle()=" + getTalle() + ", getColor()="
+                + getColor() + ", getId()=" + getId() + ", getPrecio()=" + getPrecio()
+                + ", toString()=" + super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+                + "]";
 }
-	@Override
-	protected int getId() {
-		return 0;
-	}
+    @Override
+    public int getId() {
+        return 0;
+    }
 }
