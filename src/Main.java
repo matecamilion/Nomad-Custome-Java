@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import clases.*;
-import java.util.HashMap;
 
 public class Main {
 
@@ -8,7 +7,7 @@ public class Main {
 
         Stock stock = new Stock();
         int opcion = 0;
-
+        
         try (Scanner scanner = new Scanner(System.in)) {
             while (opcion != 4) {
                 System.out.println("----BIENVENIDO A NOMAD CUSTOME----");
@@ -49,12 +48,13 @@ public class Main {
 
                                 System.out.println("Prenda agregada al stock.");
                                 stock.agregarPrenda(new Remeras(id, precio, talle, color));
+                                stock.guardarStockEnArchivo();
 
                                 break;
 
                             case 2:
                                 System.out.println("----Agregar pantalon al stock----");
-                                System.out.print("Ingrese el ID del pantalón: ");
+                                System.out.print("Ingrese el ID del pantalon: ");
                                 int id1 = scanner.nextInt();
                                 scanner.nextLine(); 
 
@@ -69,7 +69,9 @@ public class Main {
 
                                 System.out.println("Prenda agregada al stock.");
                                 stock.agregarPrenda(new Pantalones(id1, precio1, talle1, color1));
+                                stock.guardarStockEnArchivo();
 
+                                
                                 break;
 
                             case 3:
@@ -89,7 +91,8 @@ public class Main {
 
                                 System.out.println("Prenda agregada al stock.");
                                 stock.agregarPrenda(new Buzos(id2, precio2, talle2, color2));
-
+                                stock.guardarStockEnArchivo();
+                                
                                 break;
 
                             default:
@@ -134,4 +137,6 @@ public class Main {
             }
         }
     }
+    
+    
 }

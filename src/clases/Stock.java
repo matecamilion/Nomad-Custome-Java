@@ -1,9 +1,22 @@
 package clases;
 import java.util.HashMap;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class Stock {
     public HashMap<Integer, Prenda> prendas;
 
+    public void guardarStockEnArchivo() {
+        try (PrintWriter writer = new PrintWriter(new FileWriter("stock.txt"))) {
+            for (Prenda prenda : prendas.values()) {
+                writer.println(prenda.toString());
+            }
+        } catch (IOException e) {
+            System.out.println("Error al guardar el stock en el archivo.");
+        }
+    }
+    
     public Stock() {
         this.prendas = new HashMap<>();
     }

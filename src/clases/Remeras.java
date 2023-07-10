@@ -12,6 +12,6 @@ public class Remeras extends Prenda {
 
     @Override
     public String toString() {
-        return "Remeras [id=" + id + ", precio=" + precio + ", talle=" + talle + ", color=" + color + "]";
+        return "Tenemos remera de color " + color + ", con el id " + id + ", de talle " + talle + " con el valor de $" + precio;
     }
 }

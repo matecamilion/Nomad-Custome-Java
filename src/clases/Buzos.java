@@ -13,6 +13,6 @@ class Buzos extends Prenda {
 
     @Override
     public String toString() {
-        return "Buzos [id=" + id + ", precio=" + precio + ", talle=" + talle + ", color=" + color + "]";
+        return "Tenemos buzo de color " + color + ", con el id " + id + ", de talle " + talle + ", con el valor de $" + precio;
     }
 }
