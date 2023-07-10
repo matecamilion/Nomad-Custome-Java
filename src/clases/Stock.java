@@ -1,37 +1,32 @@
 package clases;
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Stock {
-	private ArrayList <Prenda> prendas;
-	public String buscarPrenda;
-	
-	public Stock() {
-		prendas = new ArrayList<>();
-	}
-	
-	
-	//para agregar prendas
-	public void agregarPrenda(Prenda prenda) {
-		prendas.add(prenda);
-		
-	}
-	
-	
-	//recorre la lista de prendas y elimina las que tengan un id igual al id proporcionado
-	
-	public void eliminarPrenda(int id) {
-        if(id >= 0 && id < prendas.size()) {
+    public HashMap<Integer, Prenda> prendas;
+
+    public Stock() {
+        this.prendas = new HashMap<>();
+    }
+
+    // Para agregar prendas
+    public void agregarPrenda(Prenda prenda) {
+        prendas.put(prenda.getId(), prenda);
+    }
+
+    // Recorre el stock y elimina la prenda con el ID proporcionado 	
+    public boolean eliminarPrenda(int id) {
+        if (prendas.containsKey(id)) {
             prendas.remove(id);
-            System.out.println("Prenda eliminada");
-        }else{
-        	System.out.println("El ID ingresado no existe");
+            return true;
+        } else {
+            return false;
         }
-	}
-	public Prenda buscarPrenda() {
-		for(Prenda prenda : prendas) {
-		System.out.println(prenda.toString());
-		
-		}
-		return null;
-	}
+    }
+
+    // Muestra el stock de prendas
+    public void mostrarStock() {
+        for (Prenda prenda : prendas.values()) {
+            System.out.println(prenda.toString());
+        }
+    }
 }
